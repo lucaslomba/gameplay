@@ -14,7 +14,7 @@ type Props = {
     onPress: () => void;
 }
 
-export function Category({title, icon: Icon, checked=false, hasCheckBox=true, ...rest} : Props){
+export function Category({title, icon: Icon, checked=false, hasCheckBox=false, ...rest} : Props){
     const { secondary40, secondary50, secondary70, secondary75 } = theme.colors
 
     return (
