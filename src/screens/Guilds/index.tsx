@@ -22,6 +22,42 @@ export function Guilds({ handleGuildSelect } : Props){
             name: 'Batata',
             icon: 'image.png',
             owner: false
+        },
+        {
+            id: '3',
+            name: 'Batata',
+            icon: 'image.png',
+            owner: false
+        },
+        {
+            id: '4',
+            name: 'Batata',
+            icon: 'image.png',
+            owner: false
+        },
+        {
+            id: '5',
+            name: 'Batata',
+            icon: 'image.png',
+            owner: false
+        },
+        {
+            id: '6',
+            name: 'Batata',
+            icon: 'image.png',
+            owner: false
+        },
+        {
+            id: '7',
+            name: 'Batata',
+            icon: 'image.png',
+            owner: false
+        },
+        {
+            id: '8',
+            name: 'Batata',
+            icon: 'image.png',
+            owner: false
         }
     ]
 
@@ -37,7 +73,9 @@ export function Guilds({ handleGuildSelect } : Props){
                     />
                 )}
                 showsVerticalScrollIndicator={false}
-                ItemSeparatorComponent={() => <ListDivider/>}
+                ItemSeparatorComponent={() => <ListDivider isCentered/>}
+                contentContainerStyle={{ paddingBottom: 68, paddingTop: 103 }}
+                ListHeaderComponent={() => <ListDivider isCentered/>}
                 style={styles.guilds}
             />
         </View>
