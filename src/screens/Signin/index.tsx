@@ -5,12 +5,14 @@ import { ButtonIcon } from '../../components/ButtonIcon'
 import IllustrationImg from '../../assets/illustration.png'
 import { styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
-
+import { useAuth } from '../../hooks/auth';
 import { Background } from '../../components/Background'
 
 export function Signin(){
 
   const navigation = useNavigation()
+
+  const { user } = useAuth()
 
   function handleSignin(){
     navigation.navigate('Home')
